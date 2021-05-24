@@ -1,0 +1,49 @@
+
+ 
+<html>
+    <head>
+      <title>face recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body style="background-color: darksalmon;">
+    <span class="container">
+      
+      <center>
+  
+        <label style="font-size: 20px; font-weight: bold; font-style: cursive;">Webcam View - </label>
+
+       <div>
+       <div id="camera"></div>
+       <br><br>
+        <button class="btn btn-info" onclick="take_snapshot()">Capture Image</button>
+      </div>
+
+      <div>
+       <label style="font-size: 20px; font-weight: bold; font-style: cursive;">Snapshot</label>
+
+        <div id="result"></div>
+        <br><br>
+        <button class="btn btn-info" onclick="check()">identify</button>
+        <h2 style="font-size: 15px;" id="object_name"></h2>
+        <h2 style="font-size: 15px;" id="object_accuracy"></h2>
+        </div>
+  
+      </center>
+  
+    </span>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
